@@ -19,7 +19,7 @@ export default async function sendEmail() {
             service: "gmail",
             auth : {
                 type: "OAuth2",
-                user: "arthuroliveira00132@gmail.com",
+                user: "",
                 clientId: CLIENT_ID,
                 clientSecret: CLIENT_SECRET,
                 refreshToken: REFRESH_TOKEN,
@@ -28,8 +28,8 @@ export default async function sendEmail() {
         });
 
         const mailOptions  = {
-            from: "Arthur <arthuroliveira00132@gmail.com>",
-            to: "Arthur <arthuroliveira00132@gmail.com>",
+            from: "",
+            to: "",
             subject: "Testando o uso da API"
         }
 
